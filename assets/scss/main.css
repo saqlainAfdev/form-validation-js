@@ -1,0 +1,200 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  outline: 0;
+}
+
+.mb-25 {
+  margin-bottom: 25px !important;
+}
+
+body {
+  font-family: 'Poppins', sans-serif !important;
+}
+
+.register-form-sec {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 50px 0;
+}
+
+.register-form-sec .register-form-block {
+  max-width: 600px;
+  margin-inline: auto;
+  background-color: #fff;
+  -webkit-box-shadow: 0 0 10px rgba(255, 159, 41, 0.36);
+          box-shadow: 0 0 10px rgba(255, 159, 41, 0.36);
+  border-radius: 15px;
+  padding: 25px;
+  width: 100%;
+}
+
+.input-style {
+  margin-bottom: 20px;
+}
+
+.input-style .input-label {
+  font-size: 16px;
+  margin-bottom: 5px;
+  text-transform: capitalize;
+  display: block;
+  color: #000;
+  font-weight: 500;
+}
+
+.input-style .input-label span {
+  color: #dc3545;
+  position: relative;
+  top: -2px;
+}
+
+.input-style.success .ctm-input {
+  border-color: #28a745;
+}
+
+.input-style.error .ctm-input {
+  border-color: #dc3545;
+}
+
+.input-style .ctm-input {
+  display: block;
+  height: 50px;
+  width: 100%;
+  border: 2px solid #ddd;
+  border-radius: 7px;
+  padding: 20px;
+  -webkit-transition: .4s ease-in-out;
+  transition: .4s ease-in-out;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.input-style .ctm-input:focus {
+  border-color: #FF9F29;
+}
+
+.input-style .ctm-input::-webkit-input-placeholder {
+  text-transform: capitalize;
+}
+
+.input-style .ctm-input:-ms-input-placeholder {
+  text-transform: capitalize;
+}
+
+.input-style .ctm-input::-ms-input-placeholder {
+  text-transform: capitalize;
+}
+
+.input-style .ctm-input::placeholder {
+  text-transform: capitalize;
+}
+
+.input-style .pass-field {
+  position: relative;
+}
+
+.input-style .pass-field .ctm-input {
+  padding-right: 50px;
+}
+
+.input-style .pass-field .eye-icon {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  width: 50px;
+  height: 50px;
+  background-color: #FF9F29;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-top-right-radius: 7px;
+  border-bottom-right-radius: 7px;
+  -webkit-transition: .4s ease-in-out;
+  transition: .4s ease-in-out;
+  cursor: pointer;
+  color: #fff;
+  font-size: 18px;
+}
+
+.input-style .pass-field .eye-icon:hover {
+  background-color: #1A4D2E;
+}
+
+.input-style .error {
+  font-size: 14px;
+  color: #dc3545;
+  font-weight: 400;
+}
+
+.primary-headline {
+  font-size: 30px;
+  font-weight: 500;
+  color: #000;
+  margin-bottom: 15px;
+  text-transform: capitalize;
+}
+
+.submit-btn {
+  height: 50px;
+  width: 100%;
+  border-radius: 7px;
+  background-color: #FF9F29;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  overflow: hidden;
+  border: 0;
+  text-transform: capitalize;
+  cursor: pointer;
+}
+
+.submit-btn span {
+  z-index: 2;
+}
+
+.submit-btn::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: -100%;
+  left: 0;
+  right: 0;
+  background-color: #1A4D2E;
+  z-index: 1;
+  -webkit-transition: .4s ease-in-out;
+  transition: .4s ease-in-out;
+}
+
+.submit-btn:hover::before, .submit-btn.active::before, .submit-btn:focus::before {
+  top: 0;
+}
+/*# sourceMappingURL=main.css.map */

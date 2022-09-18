@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation JS</title>
+    <link rel="stylesheet" href="assets/scss/main.css">
+</head>
+
+<body>
+    <section class="register-form-sec">
+        <div class="register-form-block">
+            <h2 class="primary-headline">
+                registration
+            </h2>
+            <form  id="form" action="/">
+                <div class="input-style">
+                    <label class="input-label" for="username">
+                        name
+                        <span>*</span>
+                    </label>
+                    <input class="ctm-input name" name="username" id="username" type="text" placeholder="enter name">
+                    <span class="error"></span>
+                </div>
+                <div class="input-style">
+                    <label class="input-label" for="email">
+                        email
+                        <span>*</span>
+                    </label>
+                    <input autocomplete="off" class="ctm-input email" name="email" type="text"
+                        placeholder="enter email">
+                    <span class="error"></span>
+                </div>
+                <div class="input-style">
+                    <label class="input-label" for="password">
+                        password
+                        <span>*</span>
+                    </label>
+                    <div class="pass-field">
+                        <input class="ctm-input password" name="password" type="password" placeholder="password">
+                        <div class="eye-icon">
+                            <i class="fa-solid fa-eye-slash"></i>
+                        </div>
+                    </div>
+                    <span class="error"></span>
+                </div>
+                <div class="input-style mb-25">
+                    <label class="input-label" for="confirm-password">
+                        confirm password
+                        <span>*</span>
+                    </label>
+                    <div class="pass-field">
+                        <input class="ctm-input confirm-password" name="confirm-password" type="password"
+                            placeholder="confirm password">
+                        <div class="eye-icon">
+                            <i class="fa-solid fa-eye-slash"></i>
+                        </div>
+                    </div>
+                    <span class="error"></span>
+                </div>
+                <button type="submit" class="submit-btn">
+                    <span>Sign up</span>
+                </button>
+            </form>
+
+
+        </div>
+    </section>
+
+    <div class="box">
+        
+    </div>
+
+    <script src="assets/js/main.js"></script>
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/dd2c46839c.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

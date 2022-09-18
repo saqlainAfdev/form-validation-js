@@ -1,0 +1,196 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    outline: 0;
+}
+
+// variables
+
+$white: #fff;
+$black: #000;
+$border-color: #ddd;
+$success-clr:#28a745;
+$danger-clr:#dc3545;
+$primary:#FF9F29;
+$secondary:#1A4D2E;
+$gray-900:#999;
+$gray-600:#666;
+
+// mixins
+
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mb-25 {
+    margin-bottom: 25px !important;
+}
+
+// google font
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+body {
+    font-family: 'Poppins', sans-serif !important;
+}
+
+
+.register-form-sec {
+    @include flex-center;
+    padding: 50px 0;
+
+    .register-form-block {
+        max-width: 600px;
+        margin-inline: auto;
+        background-color: $white;
+        box-shadow: 0 0 10px rgba($primary, .36);
+        border-radius: 15px;
+        padding: 25px;
+        width: 100%;
+    }
+}
+
+.input-style {
+    margin-bottom: 20px;
+
+    .input-label {
+        font-size: 16px;
+        margin-bottom: 5px;
+        text-transform: capitalize;
+        display: block;
+        color: $black;
+        font-weight: 500;
+
+        span {
+            color: $danger-clr;
+            position: relative;
+            top: -2px;
+        }
+    }
+
+    &.success {
+       
+        .ctm-input {
+            border-color: $success-clr;
+        }
+    }
+
+    &.error {
+        
+        .ctm-input {
+            border-color: $danger-clr;
+        }
+    }
+
+    .ctm-input {
+        display: block;
+        height: 50px;
+        width: 100%;
+        border: 2px solid $border-color;
+        border-radius: 7px;
+        padding: 20px;
+        transition: .4s ease-in-out;
+        font-size: 16px;
+        font-weight: 400;
+
+        &:focus {
+            border-color: $primary;
+        }
+
+        &::placeholder {
+            text-transform: capitalize;
+        }
+
+       
+    }
+
+    .pass-field {
+        position: relative;
+
+        .ctm-input {
+            padding-right: 50px;
+
+        }
+
+        .eye-icon {
+            position: absolute;
+            right: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 50px;
+            height: 50px;
+            background-color: $primary;
+            @include flex-center;
+            border-top-right-radius: 7px;
+            border-bottom-right-radius: 7px;
+            transition: .4s ease-in-out;
+            cursor: pointer;
+            color: $white;
+            font-size: 18px;
+
+            &:hover {
+                background-color: $secondary;
+            }
+        }
+    }
+
+    .error {
+        font-size: 14px;
+        color: $danger-clr;
+        font-weight: 400;
+    }
+}
+
+.primary-headline {
+    font-size: 30px;
+    font-weight: 500;
+    color: $black;
+    margin-bottom: 15px;
+    text-transform: capitalize;
+}
+
+.submit-btn {
+    height: 50px;
+    width: 100%;
+    border-radius: 7px;
+    background-color: $primary;
+    color: $white;
+    font-size: 18px;
+    font-weight: 500;
+    @include flex-center;
+    position: relative;
+    overflow: hidden;
+    border: 0;
+    text-transform: capitalize;
+    cursor: pointer;
+
+    span {
+        z-index: 2;
+    }
+
+    &::before {
+        content: "";
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: -100%;
+        left: 0;
+        right: 0;
+        background-color: $secondary;
+        z-index: 1;
+        transition: .4s ease-in-out;
+    }
+
+    &:hover,
+    &.active,
+    &:focus {
+        &::before {
+            top: 0;
+        }
+    }
+
+}
